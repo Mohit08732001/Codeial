@@ -4,10 +4,16 @@ module.exports.profile=function(req,res){
 };
 
 module.exports.signUp=function(req,res){
+  if(req.isAuthenticated()){
+    return res.redirect('profile');
+  }
   return res.render('sign-up',{title:'Codeial|Sign Up'});
 }
 
 module.exports.signIn=function(req,res){
+  if(req.isAuthenticated()){
+    return res.redirect('profile');
+  }
   return res.render('sign-in',{title:'Codeial|Sign In'});
 }
 
@@ -37,5 +43,11 @@ module.exports.create=function(req,res){
 
 //Sign In and Session Creation
 module.exports.createSession=function(req,res){
-  //TODO
+  return res.redirect('/');
+}
+
+//Sign Out
+module.exports.destroySession=function(req,res){
+  req.logout();
+  return res.redirect('/');
 }
