@@ -14,12 +14,13 @@ const passportLocal=require('./config/passport-local-strategy');
 const MongoStore=require('connect-mongo');
 const sassMiddleware=require('node-sass-middleware');
 
-//SASS Middleware
+//SCSS Middleware
 app.use(sassMiddleware({
-  src: '/assets/scss',
-  dest: '/assets/css',
+  src: './assets/scss',
+  dest: './assets/css',
   debug: true,
-  outputStyle: 'expanded'
+  outputStyle: 'extended',
+  prefix:'/css'
 }));
 
 app.use(express.urlencoded());

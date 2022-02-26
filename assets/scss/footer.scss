@@ -1,0 +1,27 @@
+#main-footer{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+  
+    padding: 2px;
+    background-color: rgb(77, 0, 128);
+footer{
+    font-size: 1em;
+    font-family: sans-serif;
+}
+#horizontal-list{
+    display: flex;
+    flex-direction: row;
+    li{
+        font-size: larger;
+        margin-left: 5px;
+        margin-right: 5px;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+}

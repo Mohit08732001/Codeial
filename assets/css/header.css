@@ -1,0 +1,21 @@
+#main-header {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #4d0080; }
+  #main-header header {
+    font-size: 3.5em;
+    font-family: sans-serif; }
+  #main-header #horizontal-list {
+    display: flex;
+    flex-direction: row; }
+    #main-header #horizontal-list li {
+      font-size: larger;
+      margin-left: 5px;
+      margin-right: 5px; }
+      #main-header #horizontal-list li a {
+        color: white;
+        text-decoration: none; }

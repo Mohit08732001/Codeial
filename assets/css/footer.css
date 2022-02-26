@@ -1,0 +1,20 @@
+#main-footer {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2px;
+  background-color: #4d0080; }
+  #main-footer footer {
+    font-size: 1em;
+    font-family: sans-serif; }
+  #main-footer #horizontal-list {
+    display: flex;
+    flex-direction: row; }
+    #main-footer #horizontal-list li {
+      font-size: larger;
+      margin-left: 5px;
+      margin-right: 5px; }
+      #main-footer #horizontal-list li a {
+        color: white;
+        text-decoration: none; }
