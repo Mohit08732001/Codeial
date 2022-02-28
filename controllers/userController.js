@@ -1,4 +1,6 @@
 const User=require('../models/user');
+
+
 module.exports.profile=function(req,res){
   res.render('user',{title:'Users'});
 };
@@ -51,3 +53,4 @@ module.exports.destroySession=function(req,res){
   req.logout();
   return res.redirect('/');
 }
+

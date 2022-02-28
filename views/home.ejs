@@ -1,7 +1,20 @@
-<h1>Codeial/Home</h1>
+<h1><%= title%></h1>
 <section id="new-post">
-    <form id="new-post-form"method="post">
-        <textarea id="new=post-content" cols="30" rows="3" placeholder="Type Here...."></textarea>
-        <button type="submit"></button>
+    <form action="/posts/create" id="new-post-form" method="post">
+        <textarea name="content" cols="30" rows="3" placeholder="Type Here...." required></textarea>
+        <button type="submit">POST</button>
      </form>
+     <div id="post-list-container">
+         <ul>
+             <% for(post of posts) {%>
+              <li><%= post.content %>  </li>
+              <!-- <br> -->
+              <p>
+                  <small>
+                  <%= post.user.name%>
+                </small>
+              </p>
+              <%}%>
+         </ul>
+     </div>
 </section>
