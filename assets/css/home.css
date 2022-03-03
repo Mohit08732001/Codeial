@@ -1,0 +1,12 @@
+#home-container {
+  height: 97.5%;
+  display: flex; }
+  #home-container #new-post {
+    margin-top: 2%;
+    width: 70%;
+    padding: 10px; }
+  #home-container #user-friends {
+    width: 30%;
+    padding: 10px;
+    border-left: 1px solid #6c737a;
+    height: 100%; }

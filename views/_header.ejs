@@ -2,7 +2,7 @@
 <header><i class="fa-solid fa-comments"></i>&nbsp;Codeial</header>
 <ul id="horizontal-list" type="none">
 <% if(locals.user) {%>
-<li><a href="/users/profile"><%= user.name%></a></li>
+<li><a href="/users/profile/<%= user.id%>"><%= user.name%></a></li>
 <li><a href="/users/sign-out">Sign Out</a></li>
 
 <%}else{%>    
